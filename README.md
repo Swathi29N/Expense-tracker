@@ -12,7 +12,7 @@ An Expense Tracker project is a software application designed to help users reco
 
 **Slot:** B22 + B24
 
-**Date of Submission:** [DD/MM/YYYY]
+**Date of Submission:** 16/09/2026
 
 ---
 
