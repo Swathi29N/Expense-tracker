@@ -129,4 +129,3 @@ The user can add new records through the command-line menu, and the new informat
 ## Conclusion
 
 Expense Tracker provides a simple way to record and understand daily spending through a command-line interface. The project demonstrates basic Java programming concepts such as classes, methods, user input, file handling, collections, exception handling, and CSV data processing.
-
