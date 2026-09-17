@@ -1,4 +1,4 @@
-# Expense-tracker
+# Expense-Tracker
 An Expense Tracker project is a software application designed to help users record, monitor, and manage their daily income and spending.
 # Expense Tracker
 
@@ -12,7 +12,7 @@ An Expense Tracker project is a software application designed to help users reco
 
 **Slot:** B22 + B24
 
-**Date of Submission:** 17/09/2026
+**Date of Submission:** 18/09/2026
 
 
 ## Project Description
