@@ -1,31 +1,28 @@
-# Expense Tracker – Project Statement
+# Project Statement
 
-## Problem Statement
+## Expense Tracker
 
-Managing daily expenses manually can be difficult and may lead to poor tracking of spending. This project aims to develop a simple command-line based **Expense Tracker** that allows users to record and manage their expenses efficiently.
+Expense Tracker is a simple command-line application developed completely in Java to help users record and manage their daily expenses. The application allows users to add, view, search, and analyze expenses while storing the data in a CSV file.
 
-## Objective
+The project is designed to be simple, lightweight, and easy to run from the terminal without requiring any graphical interface or external libraries.
 
-The main objective is to create a simple application that can:
+### Main Features
 
-* Add new expenses
-* View recorded expenses
-* Update expense details
-* Delete expenses
-* Calculate total expenses
-* Display expenses based on categories
+- Add new expenses with date, category, description, and amount.
+- View all recorded expenses.
+- Calculate total expenses.
+- View category-wise expense summaries.
+- Search expenses by category or description.
+- Store expense records in a CSV file.
 
-## Proposed Solution
+### Technologies
 
-The Expense Tracker uses **Python** and **CSV file handling** to store and manage expense records. The application provides a command-line interface through which users can perform different expense management operations.
+Java, CSV File Handling, and Java Standard Libraries.
 
-## Expected Outcome
+### Execution
 
-The system provides a simple and efficient way to record, manage, and monitor daily expenses while demonstrating basic programming and file-handling concepts.
+The project can be compiled and executed directly from the command line using:
 
-## Technologies Used
-
-* Python 3
-* CSV File Handling
-* Command Line Interface
-* GitHub
+```bash
+javac ExpenseTracker.java
+java ExpenseTracker
