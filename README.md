@@ -12,67 +12,29 @@ An Expense Tracker project is a software application designed to help users reco
 
 **Slot:** B22 + B24
 
-**Date of Submission:** 16/09/2026
+**Date of Submission:** 17/09/2026
 
----
 
-## Project Overview
+## Project Description
 
-This project is a simple command-line based **Expense Tracker** designed to help users record and manage their daily expenses.
+Expense Tracker is a simple command-line application developed using Java to help users record and manage their daily expenses. The application stores expense information in a CSV file and provides options to view, search, and analyze the recorded expenses.
 
-The system allows users to add, view, update, and delete expense records. It also calculates total expenses and provides category-wise expense information.
+## Features
 
-The project demonstrates basic programming concepts such as file handling, functions, conditional statements, loops, data validation, and command-line interaction.
+The application allows users to add new expenses by entering the date, category, description, and amount. It also allows users to view all recorded expenses, calculate total spending, view category-wise expenses, and search for expenses using a category or description.
 
----
+## Technologies Used
 
-## Main Features
+* Java
+* CSV file for data storage
+* Java standard libraries
+* Command Line Interface (CLI)
 
-* Add new expenses
-* View all expenses
-* Update expense details
-* Delete expenses
-* Calculate total expenses
-* View expenses by category
-* Store expense records permanently
-* Simple command-line interface
+## Requirements
 
----
+Java Development Kit (JDK) 8 or above is required to compile and run the project.
 
-## Software and Tools
-
-* Python 3
-* CSV
-* Git
-* GitHub
-
----
-
-## How the System Works
-
-The user interacts with the Expense Tracker through the command line. The system accepts expense details and stores them in a CSV file.
-
-Users can view, update, or delete their expense records. The system can also calculate the total amount spent and display expenses based on categories.
-
-```text
-        User
-          |
-          v
-   Expense Tracker
-          |
-    +-----+-----+---------+---------+
-    |           |         |         |
-    v           v         v         v
-   Add         View     Update    Delete
- Expense      Expenses  Expense   Expense
-    |           |         |         |
-    +-----------+---------+---------+
-                |
-                v
-           expenses.csv
-```
-
----
+No external libraries or additional dependencies are required.
 
 ## Project Structure
 
@@ -80,182 +42,91 @@ Users can view, update, or delete their expense records. The system can also cal
 Expense-Tracker/
 │
 ├── README.md
-├── statement.md
+├── ExpenseTracker.java
+├── expenses.csv
 ├── requirements.txt
-├── expense_tracker.py
-└── expenses.csv
+└── Project_Report.pdf
 ```
 
----
+## Setup
 
-## How to Run
-
-### Step 1: Install Python
-
-Install **Python 3.x** on your system.
-
-### Step 2: Clone the Repository
+First, make sure Java is installed on your computer. Open a terminal or Command Prompt and check the Java version using:
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+java -version
 ```
 
-### Step 3: Open the Project Folder
+Also check that the Java compiler is available:
+
+```bash
+javac -version
+```
+
+Clone the repository using:
+
+```bash
+git clone https://github.com/YOUR-USERNAME/Expense-Tracker.git
+```
+
+Move into the project directory:
 
 ```bash
 cd Expense-Tracker
 ```
 
-### Step 4: Run the Program
+## Compilation
+
+Compile the Java program using:
 
 ```bash
-python expense_tracker.py
+javac ExpenseTracker.java
 ```
 
-The Expense Tracker menu will be displayed in the terminal.
+If compilation is successful, a `ExpenseTracker.class` file will be created.
 
----
+## Execution
 
-## Usage
+Run the program using:
 
-After running the program, the following menu is displayed:
+```bash
+java ExpenseTracker
+```
+
+The application will display a menu in the terminal.
 
 ```text
-===== EXPENSE TRACKER =====
-
+========================================
+           EXPENSE TRACKER
+========================================
 1. Add Expense
-2. View Expenses
-3. Update Expense
-4. Delete Expense
-5. View Total Expenses
-6. View Expenses by Category
-7. Exit
-
-Enter your choice:
+2. View All Expenses
+3. Calculate Total Expenses
+4. Category-wise Summary
+5. Search Expenses
+6. Exit
+========================================
 ```
 
-Enter the corresponding number to perform an operation.
-
----
-
-## Expense Details
-
-Each expense record contains:
-
-* Expense ID
-* Date
-* Category
-* Description
-* Amount
-
-Example:
-
-```text
-ID: 1
-Date: 15-09-2026
-Category: Food
-Description: Lunch
-Amount: ₹150
-```
-
----
+Enter the number corresponding to the operation you want to perform.
 
 ## Data Storage
 
-Expense records are stored permanently in the `expenses.csv` file.
+Expense records are stored in the `expenses.csv` file. Each record contains the date, category, description, and amount of the expense.
 
-Example:
+If the CSV file does not exist, the program automatically creates it with the required headings.
 
-```text
-ID,Date,Category,Description,Amount
-1,15-09-2026,Food,Lunch,150
-2,15-09-2026,Transport,Bus,40
-3,14-09-2026,Education,Notebook,80
-```
+## Example
 
-The stored data can be accessed again when the program is run.
-
----
-
-## Expected Output
-
-### Adding an Expense
+A sample expense record is stored in the following format:
 
 ```text
-Enter your choice: 1
-
-Enter category: Food
-Enter description: Lunch
-Enter amount: 150
-
-Expense added successfully!
+Date,Category,Description,Amount
+2026-09-10,Food,Lunch,120.00
 ```
 
-### Viewing Total Expenses
+The user can add new records through the command-line menu, and the new information will be saved to the CSV file.
 
-```text
-Enter your choice: 5
+## Conclusion
 
-Total Expenses: ₹270
-```
+Expense Tracker provides a simple way to record and understand daily spending through a command-line interface. The project demonstrates basic Java programming concepts such as classes, methods, user input, file handling, collections, exception handling, and CSV data processing.
 
-### Viewing Expenses
-
-```text
-Enter your choice: 2
-
-ID    Date          Category     Description     Amount
-1     15-09-2026    Food         Lunch           ₹150
-2     15-09-2026    Transport    Bus             ₹40
-3     14-09-2026    Education    Notebook        ₹80
-```
-
----
-
-## Testing
-
-The system is tested for:
-
-* Adding a new expense
-* Displaying all expenses
-* Updating an expense
-* Deleting an expense
-* Calculating total expenses
-* Viewing expenses by category
-* Handling invalid input
-* Saving and retrieving expense data
-
----
-
-## Limitations
-
-* The application is command-line based.
-* Expense data is stored locally in a CSV file.
-* No graphical user interface is provided.
-* No user authentication is implemented.
-* The project is developed for educational purposes.
-
----
-
-## Future Enhancements
-
-* Monthly and yearly expense reports
-* Budget management
-* Graphical user interface
-* Expense charts and visualization
-* Export data to Excel
-* Search and filter functionality
-* Database integration
-* User authentication
-
----
-
-## Documentation
-
-The `statement.md` file contains the project statement and basic project information.
-
----
-
-## Acknowledgment
-
-This project was developed as part of the **Programming in Java - Evaluated Project**. It provides practical experience in programming, file handling, data management, and command-line application development.
